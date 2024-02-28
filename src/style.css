@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Asbigan';
+    src: url(../fonts/asbigan-4bvvb.ttf);
+}
+body {
+    background-color: #E9E2E1;
+    font-family:  'Arial Narrow Bold', sans-serif;
+}
+
+cores {
+    color: #6D9773;
+    color: #0C3B2E;
+    color: #BB8A52;
+    color: #FFBA00;
+}
+
+header {
+    position: relative;
+    background-color: #0C3B2E;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1{
+    color: #BB8A52;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Asbigan';
+}
+header::before {
+    content: "";
+    background-color: #E9E2E1;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+    position: absolute;
+    right: -1rem;
+    bottom: -3rem;
+}
+header::after {
+    content: "";
+    background-color: #0C3B2E;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 0;
+}
+.apresentation {
+    position: relative;
+    text-align: center;
+    margin-top: 5rem;
+
+}
+.apresentation h2{
+    font-family: 'Asbigan';
+    color: #BB8A52;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.apresentation .detalhe {
+    background-color: #0C3B2E;
+    width:30rem;
+    height: 5rem;
+    border-radius: 5rem;
+    left: 11rem;
+    top: -1rem;
+    position: absolute;
+    z-index: -1;
+}
+.apresentation::before {
+    content: "";
+    background-color: #E9E2E1;
+    width: 9rem;
+    height: 2.5rem;
+    border-radius: 5rem;
+    position: absolute;
+    top: 2.8rem;
+    right: 8rem;
+}
+.apresentation::after {
+    content: "";
+    background-color: #0C3B2E;
+    width: 5rem;
+    height: 1rem;
+    border-radius: 2rem;
+    position: absolute;
+    right: 11rem;
+    top: 3.1rem;
+}
+

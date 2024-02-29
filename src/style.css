@@ -2,9 +2,11 @@
     font-family: 'Asbigan';
     src: url(../fonts/asbigan-4bvvb.ttf);
 }
+
 body {
-    background-color: #E9E2E1;
-    font-family:  'Arial Narrow Bold', sans-serif;
+    background-color: #F9F9F1;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    overflow-x: hidden;
 }
 
 cores {
@@ -19,28 +21,41 @@ header {
     background-color: #0C3B2E;
     height: 20rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
+    box-shadow: #0C3B2E 0px 0px 9px 20px;
 }
 
-header h1{
+header h1,
+header h2 {
     color: #BB8A52;
-    font-size: 4rem;
+    font-size: 3rem;
+    line-height: 5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-family: 'Asbigan';
 }
+
+.detalhe__header::after {
+    content: "";
+    top: 1rem;
+    width: 20rem;
+    height: 1rem;
+    background-color: #0C3B2E;
+    position: absolute;
+}
+
 header::before {
     content: "";
-    background-color: #E9E2E1;
+    background-color: #F9F9F1;
     width: 10rem;
     height: 10rem;
     border-radius: 5rem;
     position: absolute;
-    right: -1rem;
-    bottom: -3rem;
+    right: 2rem;
+    bottom: -6rem;
 }
+
 header::after {
     content: "";
     background-color: #0C3B2E;
@@ -48,49 +63,99 @@ header::after {
     height: 5rem;
     border-radius: 5rem;
     position: absolute;
-    right: 1.5rem;
-    bottom: 0;
+    right: 4.5rem;
+    bottom: -3rem;
+    box-shadow: #0C3B2E 0px 0px 3px 5px;
 }
-.apresentation {
-    position: relative;
-    text-align: center;
-    margin-top: 5rem;
 
+.letter {
+    font-size: 9rem;
 }
-.apresentation h2{
+
+
+.hero {
     font-family: 'Asbigan';
-    color: #BB8A52;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-}
-.apresentation .detalhe {
-    background-color: #0C3B2E;
-    width:30rem;
-    height: 5rem;
-    border-radius: 5rem;
-    left: 11rem;
-    top: -1rem;
-    position: absolute;
-    z-index: -1;
-}
-.apresentation::before {
-    content: "";
-    background-color: #E9E2E1;
-    width: 9rem;
-    height: 2.5rem;
-    border-radius: 5rem;
-    position: absolute;
-    top: 2.8rem;
-    right: 8rem;
-}
-.apresentation::after {
-    content: "";
-    background-color: #0C3B2E;
-    width: 5rem;
-    height: 1rem;
-    border-radius: 2rem;
-    position: absolute;
-    right: 11rem;
-    top: 3.1rem;
+    display: flex;
 }
 
+.hero__apresentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 39.9rem;
+}
+
+.hero__apresentation p {
+    color: #6D9773;
+    font-family: 'Asbigan';
+    font-size: 3.3rem;
+    font-weight: bolder;
+    word-spacing: 2rem;
+    width: 50rem;
+    line-height: 4rem;
+    word-break: normal;
+}
+
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    font-weight: 600;
+    color: #BB8A52;
+}
+
+.functions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 39.9rem;
+    width: 50vw;
+}
+
+.functions {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.functions p {
+    font-size: 3rem;
+    color: #6D9773;
+    font-weight: bold;
+}
+
+.box__username{
+    /* border: 2px solid #6D9773; */
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.functions label {
+    color: #BB8A52;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+#username {
+    border: none;
+    height: 3rem;
+    width: 25rem;
+    background: #F9F9F1;
+}
+
+#username::placeholder {
+    text-align: center;
+}
+
+.icon__pdf {}
+
+.bi {}
+
+.bi-filetype-pdf {}
+
+.button__page {}
+
+.icon__send {}
+
+.bi-send-fill {}

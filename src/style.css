@@ -74,7 +74,7 @@ header .logo__content .logo{
     text-align: center;
     width: 45vw;
     color: #765D67;
-    font-family: 'Asbigan';
+    font-family: 'Enriqueta';
     font-size: 3rem;
     font-weight: 600;
 }
@@ -85,4 +85,19 @@ header .logo__content .logo{
     object-fit: cover;
     height: 80%;
     width: 80%;
+}
+.botao-enviar-pdf {
+    font-family: 'Asbigan';
+    background-color: #4B2138; /* Cor de fundo */
+    color: #F9F9F1; /* Cor do texto */
+    border: none; /* Remove a borda */
+    padding: 15px 25px; /* Espaçamento interno */
+    font-size: 27px; /* Tamanho da fonte */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave de cor */
+}
+
+.botao-enviar-pdf:hover {
+    background-color: #5C2A43; /* Cor de fundo ao passar o mouse */
 }

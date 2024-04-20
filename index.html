@@ -31,14 +31,20 @@
         <section class="hero">
             <div class="hero__apresentation">
                 <h3>SwiftRead PDF</h3>
-                <p>Leitura PDF mais rápida e fácil. <br>Com o SwiftRead PDF, a sua <br> experiência de leitura digital nunca foi tão simples e eficiente.</p>
+                <p>Leitura PDF mais rápida e fácil. <br>Com o SwiftRead PDF, a sua <br> experiência de leitura digital
+                    nunca foi tão simples e eficiente.</p>
+                <div>
+                    <!-- Botão para selecionar arquivo PDF -->
+                    <input type="file" id="upload-pdf" accept=".pdf" style="display: none;">
+                    <label for="upload-pdf" class="botao-enviar-pdf">Enviar PDF <i class="bi bi-send"></i></label>
+                </div>
             </div>
-
             <div class="hero__image">
                 <img src="./src/images/social.png" alt="">
             </div>
         </section>
     </main>
+    <script src="./src/script.js"></script>
 </body>
 
 </html>
